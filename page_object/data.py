@@ -1,6 +1,6 @@
 class Data:
 
-    TIMEOUT = 3
+    TIMEOUT = 5
     URL_MAIN_PAGE = 'https://qa-scooter.praktikum-services.ru/'
     URL_ORDER_PAGE = 'https://qa-scooter.praktikum-services.ru/order'
     ANSWER_DATA = ['Сутки — 400 рублей. Оплата курьеру — наличными или картой.',
@@ -13,12 +13,12 @@ class Data:
                         'Да, обязательно. Всем самокатов! И Москве, и Московской области.']
     ORDER_DATA_1 = {'name': 'Гордей',
                     'surname': 'Ильясов',
-                    'adress': 'г. Черемушки, ул. Вишневая, д.1',
-                    'station': 'ст. м. Яблоневая',
-                    'phone':'103'}
+                    'address': 'г. Черемушки, ул. Вишневая, д.1',
+                    'phone':'89063414141',
+                    'comment':'Резервный номер 102'}
     ORDER_DATA_2 = {'name':'Михей',
                     'surname':'Олдов',
-                    'adress':'г. Красный пахарь, ул. Стёбная, д. 25',
-                    'station':'ст. м. Гагаринская',
-                    'phone':'12345678901'}
-
+                    'address':'г. Красный пахарь, ул. Стёбная, д. 25',
+                    'phone':'+79063414441',
+                    'comment':'А скидки будут?'}
+    CONFIRM_TEXT = "Заказ оформлен"

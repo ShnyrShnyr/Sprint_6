@@ -20,18 +20,5 @@ class MainPage(BasePage):
         self.click_to_question(num)
         return self.get_answer_text(num)
 
-    @allure.step('Создаем заказ')
-    def set_order(self,station_locator, name_locator, name, last_name, adress, time, button_locator):
-        self.click_to_element(station_locator)
-        self.add_text_to_element(name_locator, name)
-        self.add_text_to_element(last_name, last_name)
-        self.add_text_to_element(adress, adress)
-        self.click_to_element(time)
-        self.click_to_element(button_locator)
 
-    def check_order(self,locator):
-        self.get_text_from_element(locator)
-
-    def click_to_logo(self):
-        self.click_to_element(MainPageLocators.LOGO_LOCATOR)
 

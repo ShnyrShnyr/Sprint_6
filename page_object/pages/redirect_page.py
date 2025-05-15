@@ -14,8 +14,3 @@ class RedirectPage(BasePage):
         self.click_to_element(RedirectPageLocators.LOGO_YANDEX)
         self.switch_to_window()
         return self.find_element_with_wait(RedirectPageLocators.FIND_BUTTON_ON_YANDEX_PAGE)
-
-    @allure.step('Переход на новую вкладку')
-    def switch_to_window(self):
-        all_tabs = self.driver.window_handles
-        self.driver.switch_to.window(all_tabs[-1])

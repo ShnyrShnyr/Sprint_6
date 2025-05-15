@@ -24,8 +24,8 @@ class OrderPage(BasePage):
         self.click_to_element(OrderPageLocators.ACCEPT_COOKIE_BUTTON)
 
     @allure.step('Проверяем заказ')
-    def check_order(self, locator):
-        return self.get_text_from_element(locator)
+    def check_order(self):
+        return self.get_text_from_element(OrderPageLocators.CONFIRM_ORDER)
 
     @allure.step('Выбираем дату следующий день')
     def create_tomorrow_date(self):

@@ -27,4 +27,4 @@ class TestOrderPage:
         main_page.click_to_element(locator)
         order_page = OrderPage(driver)
         order_page.set_order(order_data, flag)
-        assert Data.CONFIRM_TEXT in order_page.check_order(OrderPageLocators.CONFIRM_ORDER)
+        assert Data.CONFIRM_TEXT in order_page.check_order()

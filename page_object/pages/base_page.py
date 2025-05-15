@@ -37,3 +37,7 @@ class BasePage:
         method, locator = locator_1
         locator = locator.format(num)
         return method, locator
+
+    def switch_to_window(self):
+        all_tabs = self.driver.window_handles
+        self.driver.switch_to.window(all_tabs[-1])
